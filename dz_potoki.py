@@ -30,3 +30,16 @@ def task3():
         pass
     aver = sum(list1)/len(list1)
     print(f"Среднее: {aver}\n")
+
+
+th1 = threading.Thread(target=task1)
+th2 = threading.Thread(target=task2)
+th3 = threading.Thread(target=task3)
+
+th1.start()
+th1.join()
+
+th2.start()
+th3.start()
+th2.join()
+th3.join()
