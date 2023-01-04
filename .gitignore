@@ -1,0 +1,4 @@
+*.pdf
+*.txt
+*.py
+!dz_potoki.py
